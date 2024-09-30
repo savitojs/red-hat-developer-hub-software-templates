@@ -1,8 +1,8 @@
 apiVersion: scaffolder.backstage.io/v1beta3
 kind: Template
 metadata:
-  name: create-frontend-plugin
-  title: Create Frontend Plugin Template
+  name: sav-create-frontend-plugin
+  title: Sav-Create Frontend Plugin Template
   description: Template for the scaffolder that creates a frontend plugin skeleton
   annotations:
     backstage.io/techdocs-ref: dir:.
