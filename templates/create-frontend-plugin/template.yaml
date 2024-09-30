@@ -39,6 +39,8 @@ spec:
           ui:options:
             allowedHosts:
               - github.com
+            requestUserCredentials:
+              secretsKey: USER_OAUTH_TOKEN             
         pluginLocation:
           type: string
           title: Where to publish this new plugin?
