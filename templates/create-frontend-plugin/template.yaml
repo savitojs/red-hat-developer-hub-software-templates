@@ -82,7 +82,7 @@ spec:
       name: Publish the frontend plugin skeleton in a new repository
       if: ${{ parameters.pluginLocation === 'Create a new repository within the
         specified organization' }}
-      action: publish:github
+      action: github:repo:push
       input:
         allowedHosts:
           - github.com
