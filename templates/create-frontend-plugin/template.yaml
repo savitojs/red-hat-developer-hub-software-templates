@@ -89,6 +89,7 @@ spec:
         description: This is ${{ parameters.plugin_id }} frontend plugin.
         repoUrl: ${{ parameters.repoUrl }}
         sourcePath: plugins/${{parameters.plugin_id}}
+        token: ${{ secrets.USER_OAUTH_TOKEN }}
     - id: publishGithub
       name: Create pull request with the frontend plugin skeleton
       if: ${{ parameters.pluginLocation  === 'Submit a pull request to the same
@@ -100,6 +101,7 @@ spec:
         targetBranchName: ${{ parameters.targetBranchName }}
         title: Create frontend plugin ${{ parameters.plugin_id }}
         description: This pull request creates the skeleton for your frontend plugin
+        token: ${{ secrets.USER_OAUTH_TOKEN }}
   output:
     links:
       - title: View Plugin
